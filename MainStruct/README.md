@@ -153,7 +153,15 @@ mViewPager.setOnPageChangeListener(new OnPageChangeListener() {
 	@Override
 	public void onPageScrollStateChanged(int arg0) {
 	}
-});  
+});    
+  
+//  ÷∂Ø«–ªª“≥√Ê  
+private void setSelect(int i) {
+	FragmentTransaction transaction = mFragmentManager.beginTransaction();
+	hideFragments(transaction);
+	// smoothScroll True to smoothly scroll to the new item, false to transition immediately
+	mViewPager.setCurrentItem(i, false);
+}
 ```  
 		
 
