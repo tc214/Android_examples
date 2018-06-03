@@ -5,7 +5,8 @@
 *  滑动切换页面  
 *  点击底部按钮切换界面  
 *  所有切换都平滑，页面跳转不会显示中间的页面   
-*  横竖屏切换不会重叠显示    
+*  横竖屏切换不会重叠显示   
+*  可以设置禁止滑动   
 
 
 
@@ -162,7 +163,12 @@ private void setSelect(int i) {
 	// smoothScroll True to smoothly scroll to the new item, false to transition immediately
 	mViewPager.setCurrentItem(i, false);
 }
-```  
+```    
+
+####  其他  
+#####   禁止滑动：setScroll(false);  
+原理：继承ViewPager，覆盖onInterceptTouchEvent和onTouchEvent两个方法，在这两个方法中返回false即可。  
+
 		
 
 
