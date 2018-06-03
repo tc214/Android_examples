@@ -1,0 +1,156 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zl.armychat.activity.FragmentManageActivity" >
+
+   <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/devide_line"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/buttom_bar_group"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/device_flaxlines_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/relativelayout_home"
+            style="@style/ButtomBar"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:id="@+id/layout_chat"
+                android:layout_width="fill_parent"
+                android:layout_height="49dip"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/button_chat"
+                    style="@style/ButtomBarImgBtn"
+                    android:layout_gravity="center"
+                    android:background="@color/transparent"
+                    android:src="@drawable/bar_chat"
+                    android:contentDescription="@string/mcs_app_name" />
+
+                <TextView
+                    android:id="@+id/txt_chat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dip"
+                    android:text="@string/app_name"
+                    android:textColor="@color/darkgrey"
+                    android:textSize="10sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/ButtomBar">
+
+            <LinearLayout
+                android:id="@+id/layout_contacts"
+                android:layout_width="fill_parent"
+                android:layout_height="49dip"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/button_contacts"
+                    style="@style/ButtomBarImgBtn"
+                    android:layout_gravity="center"
+                    android:background="@color/transparent"
+                    android:src="@drawable/bar_contacts"
+                    android:contentDescription="@string/mcs_app_name" />
+
+                <TextView
+                    android:id="@+id/txt_contacts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dip"
+                    android:text="@string/mcs_contacts"
+                    android:textColor="@color/darkgrey"
+                    android:textSize="10sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/ButtomBar">
+
+            <LinearLayout
+                android:id="@+id/layout_discovery"
+                android:layout_width="fill_parent"
+                android:layout_height="49dip"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/button_discover"
+                    style="@style/ButtomBarImgBtn"
+                    android:background="@color/transparent"
+                    android:src="@drawable/bar_discovery"
+                    android:contentDescription="@string/mcs_app_name" />
+
+                <TextView
+                    android:id="@+id/txt_discover"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dip"
+                    android:text="@string/mcs_application"
+                    android:textColor="@color/darkgrey"
+                    android:textSize="10sp" />
+            </LinearLayout>
+        </RelativeLayout>
+        
+        <RelativeLayout style="@style/ButtomBar">
+
+            <LinearLayout
+                android:id="@+id/layout_mine"
+                android:layout_width="fill_parent"
+                android:layout_height="49dip"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/button_mine"
+                    style="@style/ButtomBarImgBtn"
+                    android:layout_gravity="center"
+                    android:background="@color/transparent"
+                    android:src="@drawable/bar_me"
+                    android:contentDescription="@string/mcs_app_name" />
+
+                <TextView
+                    android:id="@+id/txt_mine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dip"
+                    android:text="@string/mcs_mine"
+                    android:textColor="@color/darkgrey"
+                    android:textSize="10sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

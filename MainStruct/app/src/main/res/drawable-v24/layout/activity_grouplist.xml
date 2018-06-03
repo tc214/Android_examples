@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48.0dip"
+        android:background="@color/bar_color" >
+
+        <TextView
+            android:id="@+id/txt_left_group"
+            style="@style/txt_titleStyle1"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:text="@string/group_chats"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/img_back_group"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/icon_back"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/et_group_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/search_icon"
+            android:background="@drawable/edittext_login"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColorHint="#DDDDDD"
+            android:hint="@string/group_search"
+            android:textSize="14sp" 
+            android:textColor="@color/white"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/img_search_group"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="50dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/search_icon"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/img_right_group"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/group_plus"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/txt_right_group"
+            style="@style/txt_titleStyle1"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/bar_color" >
+
+            <TextView
+                android:id="@+id/TextView01"
+                style="@style/txt_titleStyle1"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dp"
+                android:text="@string/group_chats"
+                android:textSize="18sp"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/ImageView03"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/icon_back"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/EditText01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/edittext_login"
+                android:drawableLeft="@drawable/search_icon"
+                android:hint="@string/group_search"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="#DDDDDD"
+                android:textSize="14sp"
+                android:visibility="gone" >
+
+                <requestFocus />
+            </EditText>
+
+            <ImageView
+                android:id="@+id/ImageView01"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="50dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/search_icon"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/ImageView02"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/group_plus"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/TextView02"
+                style="@style/txt_titleStyle1"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_jump_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="16dp"
+        android:text="@string/group_chats"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <ListView
+        android:id="@+id/lv_group_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" >
+    </ListView>
+    
+    <TextView
+        android:id="@+id/tv_group_chat_sum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_color"
+        android:text="@string/group_chats_empty"
+        android:layout_centerHorizontal="true"
+        android:textSize="14sp" />
+
+</LinearLayout>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/black"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_title" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="16dp"
+                android:text="@string/mcs_setting_accounts"
+                android:textColor="@color/gray"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/setting_item_selector" >
+
+                <TextView
+                    android:id="@+id/tv_setting_username"
+                    style="@style/TxtTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="1dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="16dp"
+                    android:text="@string/mcs_setting_username"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txt_setting_username"
+                    style="@style/TxtTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="1dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingRight="16dp"
+                    android:text="asdf"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/view_color_darkslategray" />
+            
+             <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/setting_item_selector" >
+
+                <TextView
+                    android:id="@+id/tv_setting_nickname"
+                    style="@style/TxtTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="1dp"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="16dp"
+                    android:text="@string/mcs_setting_nickname"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txt_setting_nickname"
+                    style="@style/TxtTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="1dp"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="16dp"
+                    android:text="asdf"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/view_color_darkslategray" />
+            
+             <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/setting_item_selector" >
+
+                <TextView
+                    android:id="@+id/tv_setting_gender"
+                    style="@style/TxtTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="1dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="16dp"
+                    android:text="@string/mcs_setting_gender"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txt_setting_gender"
+                    style="@style/TxtTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="1dp"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="16dp"
+                    android:text="asdf"
+                    android:textColor="@color/txt_color"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/view_color_darkslategray" />
+             <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/setting_item_selector" >
+
+                <TextView
+                    android:id="@+id/tv_setting_birthday"
+                    style="@style/TxtTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="1dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="16dp"
+                    android:text="@string/mcs_setting_birthday"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txt_setting_birthday"
+                    style="@style/TxtTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="1dp"
+                    android:gravity="center_vertical"
+                    android:paddingRight="16dp"
+                    android:layout_centerVertical="true"
+                    android:text="asdf"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/view_color_darkslategray" />
+            
+             <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/setting_item_selector" >
+
+                <TextView
+                    android:id="@+id/tv_setting_logintime"
+                    style="@style/TxtTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="1dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="16dp"
+                    android:text="@string/mcs_setting_logintime"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txt_setting_logintime"
+                    style="@style/TxtTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="1dp"
+                    android:gravity="center_vertical"
+                    android:paddingRight="16dp"
+                    android:layout_centerVertical="true"
+                    android:text="asdf"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+         
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+               android:background="@color/view_color_darkslategray" />
+            
+             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="16dp"
+                android:text="@string/mcs_setting_safer"
+                android:textColor="@color/gray"
+                android:textSize="14sp" />
+             
+              <TextView
+					android:id="@+id/txt_user_password"
+					style="@style/TxtTitle"
+					android:textSize="16sp"
+					android:gravity="center_vertical"
+					android:background="@drawable/setting_item_selector"
+					android:layout_width="fill_parent"
+					android:layout_height="40dp"
+					android:paddingLeft="16dp"
+					android:paddingRight="10dp"
+					android:drawableRight="@drawable/right"
+					android:text="@string/mcs_setting_chat_password" />
+            
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

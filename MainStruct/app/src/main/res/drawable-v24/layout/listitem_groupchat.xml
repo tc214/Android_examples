@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    
+   <LinearLayout
+	    android:id="@+id/layout_group_chat"
+		style="@style/MMListItem"
+		android:layout_height="45.0dip"
+		android:background="@drawable/setting_item_selector"
+		android:paddingLeft="15dip">
+		<ImageView
+		    android:id="@+id/img_group_chat"
+			android:layout_width="30dip"
+			android:layout_height="30dip"
+			android:src="@drawable/icon_qunliao" />
+		<TextView
+		    android:id="@+id/tv_group_chat"
+            style="@style/MMFontTitleInList"
+			android:text="@string/groupchat_name"
+			android:layout_marginLeft="13dp"
+			android:textSize="12sp"
+			android:textStyle="normal"
+			android:textColor="@color/white"
+			android:singleLine="true" />
+	</LinearLayout>
+    
+
+</LinearLayout>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:clickable="true"
+    android:orientation="horizontal" >
+    
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="6dp"
+        android:layout_weight="1"
+        android:background="@drawable/view_white_retance_corner_shape2"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+        
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal" >
+        
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:orientation="vertical">
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+                
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="FPS"
+                    android:textColor="@color/text_color"
+                    android:textSize="16sp" />
+                
+                <EditText
+                    android:id="@+id/et_fps"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:hint=""
+                    android:inputType="number"
+                    android:minHeight="18dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp" />
+                
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+                
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/initial_video_rate"
+                    android:textColor="@color/text_color"
+                    android:textSize="16sp" />
+                
+                <EditText
+                    android:id="@+id/et_init_rt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:hint=""
+                    android:inputType="number"
+                    android:minHeight="18dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp" />
+                
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+                
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/max_video_rate"
+                    android:textColor="@color/text_color"
+                    android:textSize="16sp" />
+                
+                <EditText
+                    android:id="@+id/et_max_rt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:hint=""
+                    android:inputType="number"
+                    android:minHeight="18dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp" />
+                
+            </LinearLayout>
+            
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#808080" />
+        
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:orientation="vertical">
+            
+            <Button 
+                android:id="@+id/btn_popu_choice_1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/btn_bg_white"
+                android:textColor="@color/text_color"
+                android:textSize="16sp"
+                android:text="176*144"/>
+            <Button 
+                android:id="@+id/btn_popu_choice_2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/btn_bg_white"
+                android:textColor="@color/text_color"
+                android:textSize="16sp"
+                android:text="320*240"/>
+            <Button 
+                android:id="@+id/btn_popu_choice_3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/btn_bg_white"
+                android:textColor="@color/text_color"
+                android:textSize="16sp"
+                android:text="352*288"/>
+            <Button 
+                android:id="@+id/btn_popu_choice_4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/btn_bg_white"
+                android:textColor="@color/text_color"
+                android:textSize="16sp"
+                android:text="640*480"/>
+            <Button 
+                android:id="@+id/btn_popu_choice_5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/btn_bg_white"
+                android:textColor="@color/text_color"
+                android:textSize="16sp"
+                android:text="1280*720"/>
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/btn_bg_rectangle_red_selector"
+        android:gravity="center"
+        android:text="@string/mcs_ok"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+    
+    </LinearLayout>
+
+    <View
+        android:id="@+id/video_flag_send"
+        android:layout_width="2dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_vertical"
+        android:background="#FF0000" />
+
+</LinearLayout>

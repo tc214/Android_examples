@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:orientation="vertical">
+
+
+    <org.videolan.libvlc.media.VideoView
+        android:id="@+id/srfc"
+        android:layout_width="match_parent"
+        android:layout_height="210dp" />
+
+    <EditText
+        android:id="@+id/edit_mediaplayer_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/edittext_login"
+        android:gravity="left|center_vertical"
+        android:hint="请输入摄像头地址"
+        android:inputType="text"
+        android:paddingLeft="8dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_mediaplayer_connect"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_style_one"
+        android:paddingBottom="7dp"
+        android:paddingTop="7dp"
+        android:text="@string/mcs_create_conn"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_mediaplayer_test"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_style_one"
+        android:paddingBottom="7dp"
+        android:paddingTop="7dp"
+        android:text="test"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+
+    <EditText
+        android:id="@+id/edit_bind_camera_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext_login"
+        android:gravity="left|center_vertical"
+        android:hint="请输入需要绑定的摄像头地址"
+        android:inputType="text"
+        android:paddingLeft="8dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_camera_bind"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_style_one"
+        android:paddingBottom="7dp"
+        android:paddingTop="7dp"
+        android:text="@string/bind_addr"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+
+</LinearLayout>

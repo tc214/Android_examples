@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:minHeight="40dip"
+    android:orientation="vertical"
+    android:paddingBottom="4dip"
+    android:paddingTop="1dip" >
+
+    <include layout="@layout/message_timestamp" />
+
+    <RelativeLayout
+        android:id="@+id/right_message_layout_contentcontainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="8dp"
+        >
+
+        <ImageView
+            android:id="@+id/right_message_iv_userphoto"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="6dip"
+            android:layout_marginLeft="4dp"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitXY" />
+
+            
+	        <LinearLayout
+	            android:id="@+id/right_message_layout_leftcontainer"
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:layout_toLeftOf="@id/right_message_iv_userphoto"
+	            android:gravity="right|center_vertical"
+	            android:orientation="horizontal" >
+	
+                
+	            <RelativeLayout
+	                android:id="@+id/rl_status"
+	                android:layout_width="wrap_content"
+	                android:layout_height="match_parent"
+	                android:gravity="center_vertical"
+	                android:layout_gravity="center_vertical" >
+	
+	                 <LinearLayout
+	                    android:id="@+id/message_layout_status"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:gravity="center_vertical"
+	                    android:layout_toLeftOf="@+id/voice_time_tv"
+	                    android:orientation="horizontal"
+	                    android:layout_marginRight="3dp">
+	
+						<ImageView
+						    android:id="@+id/message_htv_status"
+						    android:layout_width="18dp"
+						    android:layout_height="18dp"
+						    android:layout_centerInParent="true"
+						    android:layout_gravity="center_vertical"
+						    android:focusable="false"
+						    android:gravity="center"
+						    android:scaleType="fitCenter"
+						    android:src="@drawable/msg_state_fail_resend"
+						    android:visibility="gone" />
+	
+						<ProgressBar
+						    android:id="@+id/message_sending"
+						    android:layout_width="20dp"
+						    android:layout_height="20dp"
+						    android:layout_gravity="center_vertical"
+						    android:gravity="center"
+						    android:visibility="gone" />
+						
+	                    <ImageView
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_gravity="center"
+	                        android:visibility="gone" />
+	                </LinearLayout>
+	                
+	                <TextView
+	                    android:id="@+id/voice_time_tv"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:gravity="right|center_vertical"
+	                    android:layout_alignParentRight="true"
+	                    android:paddingRight="8dp"
+	                    android:text="0"
+	                    android:textColor="@color/background"
+	                    android:textSize="16sp" />
+	            </RelativeLayout>
+	            <LinearLayout
+	                android:id="@+id/right_message_layout_messagecontainer"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:background="@drawable/bg_message_box_send"
+	                android:layout_toRightOf="@+id/rl_status"
+	                android:gravity="right|center_vertical"
+	                android:paddingRight="9dp"
+	                android:orientation="horizontal"/>
+	            
+		</LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

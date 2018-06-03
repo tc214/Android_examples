@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	 >
+
+    
+    <com.zl.armychat.custom.view.EmoticonsTextView
+		android:id="@+id/message_chattime_text"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="1dp"
+		android:gravity="center_vertical"
+		android:layout_centerVertical="true"
+		android:paddingLeft="5dip"
+		android:text="tesxt"
+		android:textSize="16sp"
+		android:textColor="@color/txt_color_black"
+		android:visibility="visible" />
+    
+	<ImageView
+		android:id="@+id/message_iv_msgimage"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/message_chattime_text"
+		android:gravity="center_vertical"
+		android:layout_centerVertical="true"
+		android:paddingLeft="5dip"
+		android:paddingRight="5dip"
+		android:src="@drawable/mil_chat_video_call_receive"
+		android:visibility="visible" />
+
+	
+
+</RelativeLayout>

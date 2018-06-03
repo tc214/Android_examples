@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="left" >
+
+    <RelativeLayout
+        android:id="@+id/rlayout_file_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+         >
+
+        <ImageView
+            android:id="@+id/messgae_file_bg"
+            android:layout_width="49dip"
+            android:layout_height="49dip"
+            android:layout_margin="5dip"
+            android:src="@drawable/file_icon_theme"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/message_file_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/messgae_file_bg"
+            android:text="filename"
+            android:maxEms="50"
+            android:maxLines="3"
+            android:ellipsize="middle"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <ProgressBar
+	    android:id="@+id/msg_progress"
+	    android:layout_width="20dp"
+	    android:layout_height="20dp"
+        android:layout_marginLeft="12dp"
+	    android:layout_below="@+id/rlayout_file_message"
+	    android:layout_gravity="center_vertical"
+	    android:background="@drawable/bg_download_process_bar"
+	    android:visibility="invisible" />
+    
+    <TextView
+        android:id="@+id/message_file_htv_loading_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_below="@+id/rlayout_file_message"
+        android:layout_toRightOf="@+id/msg_progress"
+        android:layout_marginLeft="2dp"
+        android:background="@drawable/bg_download_process_bar"
+        android:paddingBottom="2dip"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:paddingTop="2dip"
+        android:text="@string/click_to_download"
+        android:textColor="@color/black"
+        android:visibility="visible" />
+
+</RelativeLayout>

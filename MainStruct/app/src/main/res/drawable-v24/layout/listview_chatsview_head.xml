@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ListView's head -->
+
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:orientation="horizontal"
+    android:background="@color/black"
+    android:layout_gravity="center_vertical">
+
+    <!-- content -->
+
+    <RelativeLayout
+        android:id="@+id/head_contentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+
+        <!-- arrow img, progressbar -->
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_centerInParent="true"
+            android:layout_centerVertical="true" 
+            android:layout_marginLeft="30dp">
+
+            <!-- arrow -->
+
+            <ImageView
+                android:id="@+id/head_arrowImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/pulltorefresh_down_arrow" />
+
+            <!-- progressbar -->
+
+            <ProgressBar
+                android:id="@+id/head_progressBar"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:indeterminateDrawable="@drawable/listview_progressbar_bg"
+                android:visibility="gone" />
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:visibility="gone"
+            android:orientation="vertical" >
+
+            <!--wizard -->
+
+            <TextView
+                android:id="@+id/head_tipsTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lv_refresh_release_refresh"
+                android:textColor="@color/pull_refresh_textview"
+                android:textSize="18sp" />
+
+            <!-- wizard -->
+
+            <TextView
+                android:id="@+id/head_lastUpdatedTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="@string/lv_refresh_refresh_lasttime"
+                android:textColor="@color/gold"
+                android:textSize="12sp"
+                android:autoLink="none" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

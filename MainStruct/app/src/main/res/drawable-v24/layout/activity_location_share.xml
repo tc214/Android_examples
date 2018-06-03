@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relty_locationShare"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.zl.armychat.widget.BaseBaiduMapLayoutView
+        android:id="@+id/mapView_map2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transgray"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/relty_topShow_location"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transgray"
+            android:padding="8dp" >
+
+            <Button
+                android:id="@+id/close_share_btn"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/close_location_share_bg" />
+
+            <Button
+                android:id="@+id/switch_share_btn"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/switch_location_share_bg" />
+
+            <TextView
+                android:id="@+id/shareLocationSum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="位置共享"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txt_setting_location"
+            style="@style/TxtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/transgray"
+            android:gravity="center"
+            android:text="@string/setting"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/lily_setting_location"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transgray"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <RelativeLayout
+                android:id="@+id/rely_test_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transgray"
+                android:padding="8dp" >
+
+                <TextView
+                    android:id="@+id/txt_test_location"
+                    style="@style/TxtTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="1dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/is_test_type"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_test_location"
+                    style="@style/CustomCheckboxTheme"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:checked="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rely_clearOverlay_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transgray"
+                android:padding="8dp" >
+
+                <TextView
+                    android:id="@+id/txt_clearOverlay_location"
+                    style="@style/TxtTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="1dp"
+                    android:gravity="center_vertical"
+                    android:text="网络拓扑连接图"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <CheckBox
+                    android:id="@+id/cbox_clearOverlay_location"
+                    style="@style/CustomCheckboxTheme"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:checked="false" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rely_dispalyIcon_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transgray"
+                android:padding="8dp" >
+
+                <TextView
+                    android:id="@+id/txt_dispalyIcon_location"
+                    style="@style/TxtTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="1dp"
+                    android:gravity="center_vertical"
+                    android:text="显示头像"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_dispalyIcon_location"
+                    style="@style/CustomCheckboxTheme"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:checked="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/talk_share_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/talk_location_share_bg" />
+
+</RelativeLayout>

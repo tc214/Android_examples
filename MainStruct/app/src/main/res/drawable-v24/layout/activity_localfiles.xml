@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="@color/black" >
+
+    <include 
+        android:id="@+id/title"
+        layout="@layout/layout_title" />
+    
+     <View
+         android:id="@+id/line"
+		android:layout_width="match_parent"
+		android:layout_height="0.5dp"
+		android:background="@color/view_color_deepskyblue" />
+     
+     <TextView
+		android:id="@+id/current_path"
+		android:layout_width="match_parent"
+		android:layout_height="40dp"
+		android:gravity="center|left"
+		android:layout_marginLeft="2dp"
+		android:background="@color/transgray"
+		android:textColor="@color/white"
+		android:text="local>internal>camera"
+		android:singleLine="true" />
+     
+	<ListView
+		android:id="@+id/file_listview"
+		android:layout_width="match_parent"
+        android:layout_height="match_parent"
+		android:cacheColorHint="@color/transparent"
+		android:dividerHeight="0.5dp"
+		android:divider="@null"
+		android:fadingEdge="none"
+		android:listSelector="@drawable/list_selector_transition" />
+
+	<!-- Here is the view to show if the list is emtpy -->
+	<TextView
+		android:id="@+id/message_empty"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="center"
+		android:textColor="@color/white"
+		android:text="无文件" />
+
+</LinearLayout>

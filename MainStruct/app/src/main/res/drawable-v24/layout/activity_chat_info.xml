@@ -1,0 +1,123 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_mgr_title" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/view_color_deepskyblue" />
+    
+    			<View
+    			    android:layout_width="fill_parent"
+    			    android:layout_height="1px"
+    			    android:layout_marginTop="66dp"
+    			    android:background="@color/view_color_darkslategray" />
+			
+			<TextView
+					android:id="@+id/btn_search_history_chat"
+					style="@style/TxtTitle"
+					android:gravity="center_vertical"
+					android:background="@drawable/setting_item_selector"
+					android:layout_width="fill_parent"
+					android:layout_height="50dp"
+					android:paddingLeft="16dp"
+					android:paddingRight="10dp"
+					android:drawableRight="@drawable/right"
+					android:textSize="14sp"
+					android:text="@string/query_chat_history" />
+		 
+			
+			<View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/view_color_darkslategray" />
+
+            <RelativeLayout
+                android:id="@+id/rl_no_disturb"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:background="@drawable/setting_item_selector" >
+
+                <TextView
+                    android:id="@+id/tv_no_disturb"
+                    style="@style/TxtTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="46dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="1dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="16dp"
+                    android:text="@string/group_no_disturb"
+                    android:textSize="14sp" />
+
+                <CheckBox
+                    android:id="@+id/cb_no_disturb"
+                    style="@style/CustomCheckboxTheme"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:checked="true" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/view_color_darkslategray" />
+
+            <RelativeLayout
+                android:id="@+id/rl_stick_chat"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:background="@drawable/setting_item_selector" >
+
+                <TextView
+                    android:id="@+id/tv_stick_chat"
+                    style="@style/TxtTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="46dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="1dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="16dp"
+                    android:text="@string/group_stick_chat"
+                    android:textSize="14sp" />
+
+                <CheckBox
+                    android:id="@+id/cb_stick_chat"
+                    style="@style/CustomCheckboxTheme"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:checked="true" />
+            </RelativeLayout>
+			<View
+			    android:layout_width="fill_parent"
+			    android:layout_height="1px"
+			    android:background="@color/view_color_darkslategray" />
+
+		    <TextView
+					android:id="@+id/btn_del_history_chat"
+					style="@style/TxtTitle"
+					android:textSize="14sp"
+					android:gravity="center_vertical"
+					android:background="@drawable/setting_item_selector"
+					android:layout_width="fill_parent"
+					android:layout_height="50dp"
+					android:paddingLeft="16dp"
+					android:paddingRight="10dp"
+					android:text="@string/del_chat_history" />
+			<View
+				android:background="@color/view_color_darkslategray" 
+				android:layout_width="fill_parent"
+				android:layout_height="1px" />
+
+</LinearLayout>

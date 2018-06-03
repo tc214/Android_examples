@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:layout_width="150dp"
+		    android:layout_height="wrap_content"
+		    android:background="@drawable/bg_corner"
+		    android:orientation="vertical"
+		    android:padding="6dp" >
+		    
+<ScrollView
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+			<LinearLayout 
+			    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" >
+	
+			<TextView
+			    android:id="@+id/press_for_copysend_chat_info"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="center_vertical"
+			    android:background="@drawable/select_background_for_popsel"
+			    android:gravity="center_vertical"
+			    android:paddingBottom="3dp"
+			    android:paddingLeft="10dp"
+			    android:paddingTop="3dp"
+			    android:text="@string/copysend_message"
+			    android:textColor="@color/black"
+			    android:textSize="20sp" />
+	
+		<TextView
+		    android:id="@+id/press_for_del_chat_info"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center_vertical"
+		    android:background="@drawable/select_background_for_popsel"
+		    android:gravity="center_vertical"
+		    android:paddingBottom="3dp"
+		    android:paddingLeft="10dp"
+		    android:paddingTop="3dp"
+		    android:text="@string/user_delete_message"
+		    android:textColor="@color/black"
+		    android:textSize="20sp" />
+		
+		<TextView
+		    android:id="@+id/press_for_sort_chat_info"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center_vertical"
+		    android:background="@drawable/select_background_for_popsel"
+		    android:gravity="center_vertical"
+		    android:paddingBottom="3dp"
+		    android:paddingLeft="10dp"
+		    android:paddingTop="3dp"
+		    android:text="@string/sort_message_with_recv_order"
+		    android:textColor="@color/black"
+		    android:textSize="20sp" />
+		 
+	</LinearLayout>
+
+	</ScrollView>
+	
+</LinearLayout>

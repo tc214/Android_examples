@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="@color/black">
+	 
+  <View
+		android:layout_width="match_parent"
+		android:layout_height="0.5dp"
+		android:background="@color/view_color_deepskyblue" />
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/black"
+		>
+		<LinearLayout
+			android:layout_gravity="center"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical"
+			>
+			
+			<com.zl.armychat.custom.view.PeopleListView
+				android:id="@+id/lvContact"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:scrollbars="none"
+				android:fadingEdge="none"
+				android:divider="@null"
+				android:listSelector="@drawable/list_selector_transition"
+				android:cacheColorHint="@color/transparent" />
+		</LinearLayout>
+		
+		<com.zl.armychat.custom.view.widget.SideBar
+			android:id="@+id/sideBar"
+			android:layout_height="wrap_content"
+			android:layout_width="30dp"
+			android:layout_marginTop="30dp"
+			android:layout_gravity="right|center_vertical" />
+	</FrameLayout>
+</LinearLayout>

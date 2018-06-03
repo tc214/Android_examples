@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="200dp"
+	android:layout_height="180dp"
+	android:orientation="vertical"
+	android:background="@drawable/bg_popup_corner"
+	 >
+
+     
+	<ListView
+		android:id="@+id/groupname_list"
+		android:layout_width="200dp"
+        android:layout_height="180dp"
+		android:divider="@null"
+		android:fadingEdge="none"
+		  />
+
+	<!-- Here is the view to show if the list is emtpy -->
+	<TextView
+		android:id="@+id/groupname_empty"
+		android:layout_width="200dp"
+		android:layout_height="180dp"
+		android:gravity="center"
+		android:textColor="@color/font_value"
+		android:text="@string/maintab_text_emptypage"
+		android:textSize="15sp"
+		android:visibility="gone" />
+
+</LinearLayout>
